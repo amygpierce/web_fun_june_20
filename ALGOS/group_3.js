@@ -1,23 +1,24 @@
-// PREDICT THE OUTPUT
-for (var num = 0; num < 15; num++) {
-    console.log(num);
+function swap_first_last(arr) {
+    var temp = arr[0];
+    arr[0] = arr[arr.length -1];
+    arr[arr.length -1] = temp;
 }
-// Predicted Output: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
-for (var i = 1; i < 10; i += 2) {
-    if (i % 3 == 0) {
-        console.log(i);
+function reverseArray(arr) {
+    var newArr = [];
+    for (var i = arr.length -1; i >=0; i--) {
+        newArr.push(arr[i]);
     }
+    return newArr;
 }
-// Predicted Output: 3,9
 
-for (var j = 1; j <= 15; j++) {
-    if (j % 2 == 0) {
-        j += 2;
+function reverseArray2(arr) {
+    var temp = arr[0];
+    var temp2 = arr[arr.length - 1];
+    for (var i = arr.length; i > 0; i--) {
+        arr[i] = temp;
+        arr[i] = temp
+
+        for (var x = )
     }
-    else if (j % 3 == 0) {
-        j++;
-    }
-    console.log(j);
 }
-// Predicted Output: 1,4,5,8,10,11,14,16
