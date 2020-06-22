@@ -5,7 +5,6 @@ function reverserArr(arr){
     }
     return newArr
 }
-
 function revArr(arr){
     for(var i = 0; i < Math.floor((arr.length)/2);i++){
         var temp = arr[i]
