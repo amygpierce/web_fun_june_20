@@ -1,10 +1,33 @@
-// MONDAY
-// GO OVER RIOT
-// Given an array, reverse the numbers within the array.
-function arrayReverse(arr){
+// R - REITERATE
+// I - INPUT
+// O - OUTPUT
+// T - TEST CASES
 
+// Given an array, reverse the numbers within the array.
+// Create a new array and return that array
+function reverserArr(arr){
+    var newArr = []
+    for(var i = arr.length-1; i >=0 ;i--){
+        newArr.push(arr[i])
+    }
+    return newArr
 }
-// [1,2,3,4,5,6,7] => [7,6,5,4,3,2,1]
+
+function revArr(arr){
+    console.log("ARR LENGTH IS: ", Math.floor((arr.length)/2))
+    for(var i = 0; i < Math.floor((arr.length)/2);i++){
+        var temp = arr[i]
+        arr[i] = arr[arr.length-1-i]
+        arr[arr.length-1-i] = temp
+    }
+    return arr
+}
+
+var test = [1,2,3,4,5,6,7]
+var test1 = [1,2,3,4,5,6,7,8]
+console.log(revArr(test))
+console.log(revArr(test1))
+
 // MONDAY ALTERNATE
 function moveZero(arr){
 

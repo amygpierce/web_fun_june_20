@@ -1,24 +1,30 @@
-function swap_first_last(arr) {
-    var temp = arr[0];
-    arr[0] = arr[arr.length -1];
-    arr[arr.length -1] = temp;
-}
-
-function reverseArray(arr) {
-    var newArr = [];
-    for (var i = arr.length -1; i >=0; i--) {
-        newArr.push(arr[i]);
+function moveZero(arr) {
+    
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == 0) {
+            arr.splice(i, 1);
+            arr.push(0)
+        }
     }
-    return newArr;
+
+    return arr;
 }
 
-function reverseArray2(arr) {
-    var temp = arr[0];
-    var temp2 = arr[arr.length - 1];
-    for (var i = arr.length; i > 0; i--) {
+function arrayReverse(arr){
+    var newArray = [];
+    for (var i = arr.length - 1; i>= 0; i--) {
+        newArray.push(arr[i]);
+    }
+    return newArray;
+}
+
+function revArr(arr) {
+
+    for (var i = 0; i < arr.length/2 ; i++) {
+        var temp = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = arr[i]
         arr[i] = temp;
-        arr[i] = temp
-
-        for (var x = )
     }
+
+    return arr
 }
